@@ -1,0 +1,1 @@
+Home Work for course Go lang in Hillel 
