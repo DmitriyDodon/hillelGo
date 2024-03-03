@@ -56,16 +56,17 @@ func main() {
 	}
 	devideFunc()
 
-	fmt.Println("6 - Створити ще один switch case, але без параметру switch")
+	fmt.Println("6 - Створити ще один switch case, але без параметру switch результатом має виводитись надписи з двох будь яких case стейтментів")
 	switch {
-	case true:
-		fmt.Println("True value")
+	case false:
+		fmt.Println("False value")
 	case true && false:
 		fmt.Println("True and false value")
 	case true || false:
 		fmt.Println("True or false value")
-	case false:
-		fmt.Println("False value")
+		fallthrough
+	case true:
+		fmt.Println("True value")
 	}
 	devideFunc()
 
