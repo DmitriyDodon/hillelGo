@@ -62,7 +62,7 @@ func main() {
 	tableGames = append(tableGames, checkers, pocker)
 
 	// 6 - Переконатись що при виконанні 5-го пункта в слайсі не буде виникати аллокація памʼяті (якщо буде, то змінити код так щоб аллокація не виникала)
-	cappacityDifference := int8(oldCappacity - cap(tableGames))
+	cappacityDifference := oldCappacity - cap(tableGames)
 	if cappacityDifference == 0 {
 		fmt.Printf("Різниця в capacity %d. Отже аллокацiя пам'ятi не вiдбулася.\n\n", cappacityDifference)
 	} else {
@@ -85,5 +85,5 @@ func main() {
 	}
 
 	// 10 - Сумму вивести на екран
-	fmt.Printf("\n%d\n",totalPlayersSum)
+	fmt.Printf("\n%d\n", totalPlayersSum)
 }
