@@ -85,5 +85,5 @@ func main() {
 	}
 
 	// 10 - Сумму вивести на екран
-	fmt.Printf("\n%d\n", totalPlayersSum)
+	fmt.Printf("\nTotalPlayersSum: %d\n", totalPlayersSum)
 }
